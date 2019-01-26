@@ -85,9 +85,6 @@ public class MissingBlobs {
 			ArrayList<String> dependencies = listDependencies(blob);
 
 			for (String dep : dependencies) {
-				// Assumes all dependencies are *.so files
-				if (!dep.endsWith(".so"))
-					continue;
 
 				ArrayList<Blob> ar;
 
